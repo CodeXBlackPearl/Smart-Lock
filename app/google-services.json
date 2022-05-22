@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "919409892506",
+    "project_id": "smart-lock-851ba",
+    "storage_bucket": "smart-lock-851ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919409892506:android:8145d0024c23dc4cd75323",
+        "android_client_info": {
+          "package_name": "com.example.smartlock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919409892506-p1njbce5kipfsu6dg26qrmo9859vu72h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwGjZkB2bS_fnaLw9uHzQX3JfJtmiQpjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919409892506-p1njbce5kipfsu6dg26qrmo9859vu72h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

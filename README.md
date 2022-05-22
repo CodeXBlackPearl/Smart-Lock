@@ -1,2 +1,1 @@
-# Smart-Lock
-This project is an idea of connection between Fingerprint door lock and Mobile application. User can login from [Email + Password + QR code scanned from lock-unlock device] only otherwise authentication will be failed. and then user can connect door lock and mobile app using door-key and app-key, and then user can lock and unlock door using [Fingerprint or Passcode], ans status will be provided there.
+# SmartLock

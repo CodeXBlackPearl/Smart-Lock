@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#26282a"
+        android:clipChildren="false"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textSmartLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mark_pro_bold"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lockLottie"
+            android:layout_width="230dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSmartLock"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="lock_lottie.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mark_pro_medium"
+            android:text="@string/txt_status"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/lockUnlockStatus"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lockLottie" />
+
+        <TextView
+            android:id="@+id/lockUnlockStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/mark_pro_bold"
+            android:text="@string/initial_status"
+            android:textColor="#45A30B"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@id/textStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textStatus"
+            app:layout_constraintTop_toTopOf="@id/textStatus" />
+
+        <club.cred.synth.views.SynthButton
+            android:id="@+id/btnLock"
+            android:layout_width="220dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/mark_pro_medium"
+            android:gravity="center"
+            android:text="@string/btn_lock"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textStatus"
+            app:neuButtonType="elevated_flat"
+            app:neuFlatButtonColor="#125FAF" />
+
+        <club.cred.synth.views.SynthButton
+            android:id="@+id/btnUnLock"
+            android:layout_width="220dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/mark_pro_medium"
+            android:gravity="center"
+            android:text="@string/btn_unlock"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLock"
+            app:neuButtonType="elevated_flat"
+            app:neuFlatButtonColor="#125FAF" />
+
+        <TextView
+            android:id="@+id/txtAppKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mark_pro_medium"
+            android:layout_marginBottom="10dp"
+            android:text="@string/txt_appkey"
+            android:textColor="#125FAF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/appKey"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txtDoorKey"/>
+
+        <TextView
+            android:id="@+id/appKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:fontFamily="@font/mark_pro_medium"
+            android:text="@string/appkey"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/txtAppKey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtAppKey"
+            app:layout_constraintTop_toTopOf="@id/txtAppKey" />
+
+        <TextView
+            android:id="@+id/txtDoorKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mark_pro_medium"
+            android:text="@string/txt_doorkey"
+            android:textColor="#125FAF"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/doorKey"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txtConnected"/>
+
+        <TextView
+            android:id="@+id/doorKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:fontFamily="@font/mark_pro_medium"
+            android:text="@string/doorkey"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/txtDoorKey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtDoorKey"
+            app:layout_constraintTop_toTopOf="@id/txtDoorKey" />
+
+        <TextView
+            android:id="@+id/txtConnected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mark_pro_medium"
+            android:text="@string/connected"
+            android:textColor="#45A30B"
+            android:layout_marginBottom="40dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

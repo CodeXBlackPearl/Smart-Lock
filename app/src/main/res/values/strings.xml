@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Smart Lock</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email_address">Email Address</string>
+    <string name="btn_lock">Lock</string>
+    <string name="btn_unlock">Unlock</string>
+    <string name="txt_status">Status:</string>
+    <string name="initial_status">Locked</string>
+    <string name="scan">Scan</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account_yet">Don\'t have an account yet?</string>
+    <string name="register">Register</string>
+    <string name="scanning">Scanning...</string>
+    <string name="scanned_code">Scanned Code</string>
+    <string name="txt_appkey">AppKey:</string>
+    <string name="appkey">Hq4fVc5lTInM7m1eQuRk</string>
+    <string name="doorkey">d1bXy9iNZoHfDBVAIMUs</string>
+    <string name="txt_doorkey">DoorKey:</string>
+    <string name="connected">Connected</string>
+</resources>
